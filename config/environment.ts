@@ -1,7 +1,17 @@
+import 'dotenv/config';
+
 export const environments = {
   qa: {
-    orangeHrmUrl: 'https://opensource-demo.orangehrmlive.com',
-    username: 'Admin',
-    password: 'admin123',
+    orangeHrmUrl:
+      process.env.ORANGEHRM_URL ||
+      'https://opensource-demo.orangehrmlive.com',
+
+    username:
+      process.env.ORANGEHRM_USERNAME ||
+      'Admin',
+
+    password:
+      process.env.ORANGEHRM_PASSWORD ||
+      'admin123',
   },
 };
