@@ -17,7 +17,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['allure-playwright', {
-      resultsDir: 'allure-results',
+      resultsDir: 'allure/reports/allure-results',
     }],
   ],
 

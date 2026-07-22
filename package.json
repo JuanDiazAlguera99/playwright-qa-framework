@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "allure:generate": "allure generate allure/reports/allure-results -o allure/reports/allure-report --clean",
+    "allure:open": "allure open allure/reports/allure-report",
+    "test:report": "npm test && npm run allure:generate && npm run allure:open",
+    "prepare": "husky"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,6 +22,8 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
     "allure-playwright": "^3.10.2",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.6"
   }
 }
