@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import { environments  } from './config/environment';
+import { environments } from './config/environment';
 
 const config = environments.qa;
 
@@ -16,9 +16,12 @@ export default defineConfig({
 
   reporter: [
     ['list'],
-    ['allure-playwright', {
-      resultsDir: 'allure/reports/allure-results',
-    }],
+    [
+      'allure-playwright',
+      {
+        resultsDir: 'allure/reports/allure-results',
+      },
+    ],
   ],
 
   use: {

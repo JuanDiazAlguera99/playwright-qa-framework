@@ -10,10 +10,7 @@ test.describe('Login Tests', () => {
 
     await loginPage.goToLoginPage();
 
-    await loginPage.login(
-      orangeHrm.username,
-      orangeHrm.password
-    );
+    await loginPage.login(orangeHrm.username, orangeHrm.password);
 
     await loginPage.expectLoginSuccessful();
   });
@@ -23,10 +20,7 @@ test.describe('Login Tests', () => {
 
     await loginPage.goToLoginPage();
 
-    await loginPage.login(
-      'InvalidUser',
-      'InvalidPassword'
-    );
+    await loginPage.login('InvalidUser', 'InvalidPassword');
 
     await loginPage.expectLoginError();
   });
