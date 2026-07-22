@@ -6,20 +6,20 @@ Automated end-to-end tests using Playwright and TypeScript.
 
 This project contains automated UI tests for the OrangeHRM application using:
 
-* Playwright
-* TypeScript
-* Page Object Model (POM)
-* Allure Reports
-* Prettier
-* GitHub Actions
+- Playwright
+- TypeScript
+- Page Object Model (POM)
+- Allure Reports
+- Prettier
+- GitHub Actions
 
 ## 🛠️ Prerequisites
 
 Before running the project, make sure you have installed:
 
-* Node.js
-* npm
-* Java 17 or higher (required for Allure Commandline)
+- Node.js
+- npm
+- Java 17 or higher (required for Allure Commandline)
 
 ## 📦 Installation
 
@@ -187,8 +187,8 @@ test('User should login successfully', async ({ page }) => {
 
 GitHub Actions automatically runs the automated tests when:
 
-* A Pull Request is created or updated
-* Code is pushed to the `main` or `master` branch
+- A Pull Request is created or updated
+- Code is pushed to the `main` or `master` branch
 
 The CI pipeline:
 
